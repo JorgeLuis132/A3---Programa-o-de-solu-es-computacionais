@@ -1,0 +1,40 @@
+CREATE DATABASE IF NOT EXISTS funcionario;
+USE funcionario;
+
+CREATE TABLE agendamento (
+codigo int primary key auto_increment,
+compromisso varchar(50),
+responsavel varchar(50),
+cliente varchar(50),
+local varchar(50));
+
+CREATE TABLE cliente (
+id int primary key auto_increment,
+nome varchar(50),
+email varchar(100),
+endereco varchar(50),
+telefone varchar(50));
+
+CREATE TABLE equipamento (
+ID int primary key auto_increment,
+dados_usina varchar(50),
+potencia varchar(50),
+marca varchar(50));
+
+CREATE TABLE tbadm (
+id_adm int primary key auto_increment,
+name_adm varchar(50),
+email_adm varchar(100),
+senha_adm varchar(100),
+telefone_adm varchar(50));
+
+CREATE TABLE tbusuario (
+id_usuario int primary key auto_increment,
+nome_usuario varchar(50),
+email_usuario varchar(50),
+senha_usuario varchar(50),
+telefone_usuario varchar(50));
+
+INSERT INTO tbadm (email_adm, senha_adm) VALUES ("admin", "admin");
+
+
