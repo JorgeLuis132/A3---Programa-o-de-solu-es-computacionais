@@ -36,5 +36,6 @@ senha_usuario varchar(50),
 telefone_usuario varchar(50));
 
 INSERT INTO tbadm (email_adm, senha_adm) VALUES ("admin", "admin");
+INSERT INTO tbusuario (email_usuario, senha_usuario) VALUES ("usuario", "usuario");
 
 
