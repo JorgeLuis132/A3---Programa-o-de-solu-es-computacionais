@@ -15,7 +15,7 @@ email varchar(100),
 endereco varchar(50),
 telefone varchar(50));
 
-CREATE TABLE equipamento (
+CREATE TABLE equipamentos (
 ID int primary key auto_increment,
 dados_usina varchar(50),
 potencia varchar(50),
